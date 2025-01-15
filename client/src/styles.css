@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+    margin: 8;
+    padding: 8;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .my-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .image-avatar {
+    background-size: cover;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  
+  @include mat.all-component-themes(m3-theme.$light-theme);
+  @include header.theme($client-tinner-theme);
+  
+  --primary-color: #{$mat.get-theme-color(m3-theme.$light-theme, 'primary')};
+}

@@ -1,0 +1,31 @@
+@use '@angular/material' as mat;
+@use '../src/themes/m3-theme.scss' as m3-theme;
+@use '../src/themes/header-theme.scss' as header;
+
+// Global styles
+body {
+  margin: 8px;
+  padding: 8px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.my-spacer {
+  flex: 1 1 auto;
+}
+
+.image-avatar {
+  background-size: cover;
+}
+
+:root {
+  // Include the Angular Material theme and custom header theme
+  @include mat.all-component-themes(m3-theme.$light-theme);
+  @include header.theme($client-tinner-theme);
+
+  // Example: create a variable for primary color
+  --primary-color: #{mat.get-theme-color(m3-theme.$light-theme, 'primary')};
+}

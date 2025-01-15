@@ -1,3 +1,1 @@
-export const environment = {
-    baseUrl: '/',
-};
+export const environment = {};

@@ -30,3 +30,6 @@ body {
   // Example: create a variable for primary color
   --primary-color: #{mat.get-theme-color(m3-theme.$light-theme, 'primary')};
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

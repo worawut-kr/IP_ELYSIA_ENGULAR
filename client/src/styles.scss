@@ -25,6 +25,7 @@ body {
   // Include the Angular Material theme and custom header theme
   @include mat.all-component-themes(m3-theme.$light-theme);
   @include header.theme($client-tinner-theme);
+  @include mat.all-component-themes($client-tinner-theme);
 
   // Example: create a variable for primary color
   --primary-color: #{mat.get-theme-color(m3-theme.$light-theme, 'primary')};

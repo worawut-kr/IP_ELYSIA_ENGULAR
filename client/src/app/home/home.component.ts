@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MemberComponent } from "../member/member.component";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [MemberComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

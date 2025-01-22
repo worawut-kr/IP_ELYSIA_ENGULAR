@@ -1,10 +1,16 @@
 <mat-toolbar class="tinner-header">
-    <button class="home-button"> <span>Tinner</span> </button>
-    <button routerLink="/" class="active"> <span>Followers</span> </button>
-    <button> <span>Following</span> </button>
-    <span class="my-spacer"></span>
-    <button>
-      <mat-icon>login</mat-icon>
-      <span>Login</span>
-    </button>
-  </mat-toolbar>
+  <button class="home-button" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <span>Tinner</span>
+  </button>
+
+  <button routerLink="/"> <span>Followers</span> </button>
+
+  <button> <span>Following</span> </button>
+
+  <span class="my-spacer"></span>
+
+  <button routerLink="/login" routerLinkActive="active">
+    <mat-icon>login</mat-icon>
+    <span>Login</span>
+  </button>
+</mat-toolbar>

@@ -12,8 +12,3 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class HeaderComponent {
 }
-//'imports' must be an array of components, directives, pipes, or NgModules.
-/*Value is of type '[(not statically analyzable), RouterModule, (not statically analyzable)]'.(-991010)
-'imports' must be an array of components, directives, pipes, or NgModules.
-  Value is of type '[(not statically analyzable), RouterModule, (not statically analyzable)]'.(-991010)
-Cannot find name 'MatToolbarModule'.ts(2304)*/

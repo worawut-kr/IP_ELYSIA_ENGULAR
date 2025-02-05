@@ -1,0 +1,21 @@
+mat-toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+mat-toolbar .home-button {
+    color: darkorange;
+    font-size: larger;
+}
+
+mat-toolbar button:not(.home-button){
+    border-bottom: 0.15em solid darkmagenta;
+}
+mat-toolbar button.active:not(.home-button){
+    color: darkred;
+    border-bottom: 0.15em solid black;
+}

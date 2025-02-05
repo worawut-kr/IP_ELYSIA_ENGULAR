@@ -1,0 +1,51 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <button routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <span>Tinner</span>
+    </button>
+    <button routerLink="/members" ariaCurrentWhenActive="page">
+        <span>ABC</span>
+    </button>
+    <button routerLink="/server-error" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <span>XYZ</span>
+    </button>
+    <span>หิวบุหรี่แล้ว</span>
+
+
+    <span class="my-specter"></span>
+
+    @if (_user() === undefined) {
+    <button routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-icon>login</mat-icon>
+        <span>Login</span>
+    </button>
+    }
+
+    <!-- @if (_user()) {
+    <button (click)="logOut">
+        <mat-icon>login</mat-icon>
+        <span>Login</span>
+    </button>
+    } -->
+
+    @if (_user()) {
+    <button>
+        <span>Follower</span>
+    </button>
+    <button>
+        <span>Following</span>
+    </button>
+    }
+
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button> -->
+
+    <button mat-button>{{_user()?.display_name}}</button>
+
+</mat-toolbar>
